@@ -1,3 +1,11 @@
+
+"""
+This script can do several routine calculations for liquid systems
+February 2025
+
+September 2025: I don't use it anymore; not sure it's of much use
+except you have a very unstable MLIP
+"""
 #!/usr/bin/env python
 from ase.md import Langevin
 from ase.md.velocitydistribution import MaxwellBoltzmannDistribution, Stationary, force_temperature
@@ -17,8 +25,6 @@ try:
 except ImportError:
     from nequip.ase import NequIPCalculator
 
-"""This script can do several routine calculations for liquid systems
-February 2025"""
 
 #define constants
 FMAX = 0.2 #eV/A
