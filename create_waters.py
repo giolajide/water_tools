@@ -1,3 +1,6 @@
+"""
+Creates bulk water systems of specified Nwater molecules and density
+"""
 #!/usr/bin/env python
 from ase.io import read, write
 from sys import argv, exit
@@ -61,7 +64,7 @@ def main():
     for index, length in enumerate(lengths): #kg/m3
         crosscheck_density(requested_densities[index], length)
 
-#    system("rm -f h2o.xyz") #deleting the file might cause a race condition
+#    system("rm -f h2o.xyz") #deleting the file might cause a race condition if you run multiple in parallel
 
 
 
