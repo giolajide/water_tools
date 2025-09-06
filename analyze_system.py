@@ -1,3 +1,8 @@
+
+"""
+This script will give us several important properties of a liquid-phase system
+February 2025
+"""
 #!/usr/bin/env python
 from tqdm import tqdm
 from ase import units, Atoms
@@ -17,10 +22,6 @@ import statistics
 from scipy import stats
 import functools
 
-"""
-This script will give us several important properties of a liquid-phase system
-February 2025
-"""
 
 N_WATERS = 128
 RMAX = 13
