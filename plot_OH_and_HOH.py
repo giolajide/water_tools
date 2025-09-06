@@ -1,3 +1,6 @@
+"""
+This script will give us values of geometric descriptors for our system
+"""
 #!/usr/bin/env python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,8 +17,6 @@ from ascii_colors import ASCIIColors
 from utilities.check_sanity import check_water, StructureError
 
 BINS = 50
-
-"""This script will give us O-H lenghts distribution and H-O-H angles distribution in our system"""
 
 
 def get_water_distances(
@@ -94,7 +95,6 @@ def calculate_special_distances(
         distances = np.sort(hydrogens_distance_mat[i])
         H_nearestH[i] = np.min(distances[1:]) #exclude the first element
 
-    ##this is polished by ChatGPT from the draft I wrote
     ## get the O-H (Hbond)
     for o_index in prange(O_mask.size):        # parallel over oxygens
         o_global = O_mask[o_index]
