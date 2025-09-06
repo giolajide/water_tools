@@ -1,3 +1,6 @@
+"""
+Script is still a bit disfunctional
+"""
 import numpy as np
 from ase.io import read
 from sys import exit
@@ -6,7 +9,6 @@ from os import system, makedirs, chdir, getcwd
 from argparse import ArgumentParser
 
 
-###TODO: script is still a bit disfunctional
 
 template = """! TRAVIS input file
 ! Created with TRAVIS version compiled at Apr 18 2025 16:22:24
